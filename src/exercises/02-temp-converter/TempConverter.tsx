@@ -1,7 +1,7 @@
 import { useMachine } from "@xstate/react";
 import tempConverterMachine from "./tempConverterMachine";
 
-const Counter = () => {
+const TempConverter = () => {
   const [state, send] = useMachine(tempConverterMachine);
 
   console.log(state.value, state.context)
@@ -24,4 +24,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default TempConverter;
